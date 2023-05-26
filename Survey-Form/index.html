@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <p>This is the first <b><q>FreeCodeCamp</q></b> project</p>
+    <form>
+        <fieldset>
+            <label for="name">Enter Your Name:
+                <input type="text" id="name" name="Name" required>
+            </label>
+            <label for="age">Enter Your Age: 
+                <input type="number" id="age" name="age" 
+                min="13" max="120" required>
+            </label>
+            <label for="email">Enter Your Email:
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="password">Enter Your Password:
+                <input type="password" id="password" name="password" 
+                pattern="[a-zA-Z0-9]{8,}" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="recommendation">
+                Would you recommend FreeCodeCamp to your friends?
+            </label>
+            <label for="yes">
+                <input type="radio" id="yes" name="recommend"> Yes
+            </label>
+            <label for="no">
+                <input type="radio" name="recommend" id="no"> No
+            </label>
+            <label for="role">What's your current job role?
+                <select name="role" id="role">
+                    <option value="">Select the role</option>
+                    <option value="student">Student</option>
+                    <option value="front-end developer">Front-End developer</option>
+                    <option value="back-end developer">Back-End Developer</option>
+                    <option value="full-stack developer">Full-Stack Developer</option>
+                    <option value="manager">Manager</option>
+                    <option value="others">Others</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="feature">What's Your favorite features of FreeCodeCamp?
+                <select name="feature" id="feature">
+                    <option value=""> Select an option </option>
+                    <option value="challenges">Challenges</option>
+                    <option value="lessons">Lessons</option>
+                    <option value="projects">Projects</option>
+                    <option value="open source">Open Source</option>
+                    <option value="community support">Community Support</option>
+                </select>
+            </label>
+            <label for="suggestions">Any Suggestions to improve our platform?</label>
+            <label for="projects"></label>    
+                <input type="checkbox" name="projects" id="projects"> Projects
+            </label>
+            <label for="challenges">
+                <input type="checkbox" name="challenges" id="challenges"> Challenges
+            </label>
+            <label for="learning material">
+                <input type="checkbox" name="learning material" id="learning material"> Learning Material
+            </label>
+            <label for="videos">
+                <input type="checkbox" name="videos" id="videos"> Videos
+            </label>
+            <label for="mentor">
+                <input type="checkbox" name="mentor" id="mentor"> Mentor
+            </label>
+            <label for="comments">Any comments (or) suggestions?
+                <textarea name="comments" id="comments" 
+                cols="30" rows="10" placeholder="Enter Your Comments here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

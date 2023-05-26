@@ -1,0 +1,99 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    width:100%;
+    height:100vh;
+    margin:0;
+    background-image: linear-gradient(115deg,rgba(75, 0, 130,0.5),rgba(72, 61, 139,0.3)),
+    url(https://cdn.aarp.net/content/dam/aarp/about_aarp/aarp_policies/2020/1140-large-group-of-people.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+h1,p{
+    text-align: center;
+    color:#fef4f5;
+}
+
+q{
+    color:#1eca43;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #7f2274;
+    font-size: 28px;
+}
+
+form{
+    width:100%;
+    max-width:500px;
+    min-width:300px;
+    margin:1em auto;
+    background-image:radial-gradient(rgba(29, 29, 35, 0.5),
+    rgba(31, 27, 56, 0.6),rgba(24, 2, 32, 0.3));
+    padding:25px;
+    color:#ffffff;
+}
+
+label,select{
+    display: block;
+    margin:10px 0;
+}
+
+fieldset{
+    border: 0;
+    margin-bottom: 12px;
+}
+
+input{
+    width:100%;
+    height: 2em;
+    margin:10px 0;
+    background-color:rgba(0,0,0,0.5);
+    color:#fef4f5;
+    font-size: 15px;
+    border: 2px solid #d9f2d8ac;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    width:unset;
+    height:unset;
+    vertical-align: middle;
+}
+
+select{
+    padding:12px;
+    width:100%;
+    height:3em;
+    margin:1em auto;
+    background: linear-gradient(45deg,#0e0e4e,#3e3e4b);
+    color:#4fff8d;
+    text-shadow: 2px 1px #1e87ce;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+option{
+    background-color: #3e3e4b;
+    color: #f3f4ee;
+}
+
+textarea{
+    margin:10px 0;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width:100%;
+    height:3em;
+    padding:8px;
+    display: block;
+    margin: 0 auto;
+    cursor:pointer;
+    font-size: 25px;
+}
+
+input[type="submit"]:hover{
+    color:black;
+    background-color: rgba(255,255,255,0.6);
+    font-size: 28px;
+}
